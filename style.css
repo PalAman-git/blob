@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    background-color: #3b3637;
+    display: flex;
+    font-family: poppins;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20vw;
+    flex-direction: column;
+    min-height: 400px;
+    color: white;   
+}
+h1{
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+}
+.blob{
+    position: absolute ;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+}
+.red{
+    background-color: red;
+}
+.violet{
+    background-color: violet;
+}
+.green{
+    background-color: greenyellow;
+}
+.cyan{
+    background-color: cyan;
+}
+.pink{
+    background-color: #FF0066;
+}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 189px;
+}
+
+.wave .shape-fill {
+    fill: #3b3637;
+}
+h1,p{
+    z-index: 4;
+}
+.blobAnimation{
+    position: absolute;
+    
+
+}
+.spacer{
+    aspect-ratio: 960/300;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: -1px;
+}
+.layer1{
+    background-image: url(./layered-waves-haikei.svg);
+}
+.flip{
+    transform: rotate(180deg);
+}
